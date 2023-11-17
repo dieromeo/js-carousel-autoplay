@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.big-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-container h1 {
+    text-transform: uppercase;
+    margin-bottom: 3.125rem;
+    font-weight: bolder;
+}
+
+.big-container button {
+    all: unset;
+    display: inline;
+    margin-bottom: 1.125rem;
+    padding: .3125rem .9375rem;
+    border: .0625rem solid black;
+    border-radius: .9375rem;
+}
+
+#start {
+    background-color: lightgreen;
+}
+
+#stop {
+    background-color: lightcoral;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    background-color: grey;
+}
+
+.item {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item.active {
+    opacity: 1;
+}
+
+
+.thumbnail {
+    height: 300px;
+    width: 140px;
+}
+
+.thumbnail-container {
+    height: calc(100% /5);
+    filter: brightness(50%);
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-active {
+    filter: brightness(100%);
+    border: 2px solid yellow;
+}
